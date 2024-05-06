@@ -1,0 +1,96 @@
+*{
+margin: 0;
+padding: 0;
+}
+body{
+background-image: url(imagess/arkaplan.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/*navbar start */
+.navbar{
+    height: 150px;
+    width: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .logo img {
+    height: 150px;
+    width: 200px;
+    border: 3px solid rgb(213, 197, 158);
+    border-radius: 50%;
+}
+
+.navbar .menu a{
+    text-decoration: none;
+    font-style: bold;
+    font-size: 25px;
+    color: rgb(131, 103, 70);
+    padding: 5px;
+    position: relative;   
+    top: 50px;  
+}
+.navbar .menu a:hover{
+    color: rgb(192, 172, 150);
+    text-decoration: underline;
+    text-decoration-color: rgb(131, 103, 70);;
+}
+.navbar .medya i{
+    position: relative; 
+    top:50px;
+    font-size: 40px;
+    color: rgb(131, 103, 70); 
+    padding: 5px;
+    transition: 0.5s;
+
+}
+.navbar .medya i:hover{
+    color: rgb(192, 172, 150);
+    transform: scale(1.1)
+}
+/*navbar end */
+/* content start*/
+.content .govde {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+.content .govde .kutu{
+    height: 450px;
+    width: 380px;
+    border: 2px solid rgb(83, 74, 74);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 55%;
+}
+.content .govde .kutu:hover{
+    opacity:99%;
+}
+.content .govde #k1{ background-image: url( "imagess/bayan.jpg"); }
+.content .govde #k2{    background-image: url( "imagess/erkek.webp");}
+.content .govde #k3{    background-image: url( "imagess/çocuk.jpg");}
+.content .govde #k4{    background-image: url( "imagess/numaralı.jpeg");}
+
+.content .govde .kutu h3{
+position: relative;
+top: 350px;
+left: 150px;
+color: rgb(95, 75, 52); 
+font-size: 45px;
+}
+/*gopvde end*/
+/*responsive start*/
+@media (max-width:600px){
+    body{background: none;}
+    .navbar .menu{ display: none;}
+    .govde{
+        flex-direction: column;
+    }
+}
